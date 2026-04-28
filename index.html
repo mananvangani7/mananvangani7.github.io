@@ -10,7 +10,6 @@
 </head>
 <body>
 
-  <!-- ─── NAV ──────────────────────────────────────────────── -->
   <nav id="navbar">
     <div class="nav-logo">M.</div>
     <div class="nav-links">
@@ -22,14 +21,14 @@
     <div class="nav-menu" id="hamburger">&#9776;</div>
   </nav>
 
-  <!-- ─── TAB 1: PORTFOLIO ─────────────────────────────────── -->
+  <!-- ─── PORTFOLIO ─────────────────────────────────────────── -->
   <section class="tab-section active" id="tab-portfolio">
 
     <div class="hero">
       <div class="hero-tag">Biomedical NLP · Researcher</div>
       <h1 class="hero-title">
-        I like building stuff.<br>
-        <em>Mostly things that read.</em>
+        Hi, I'm Manan.<br>
+        <em>I like Building stuff.</em>
       </h1>
       <p class="hero-sub">
         Biomedical NLP, clinical risk extraction, knowledge graphs — making sense of medical literature at scale.
@@ -42,8 +41,8 @@
 
     <div class="about-strip">
       <div class="about-col">
-        <span class="about-num">BioBERT</span>
-        <span class="about-label">Core model</span>
+        <span class="about-num">NER</span>
+        <span class="about-label">Core work at IGIB</span>
       </div>
       <div class="about-divider"></div>
       <div class="about-col">
@@ -53,7 +52,7 @@
       <div class="about-divider"></div>
       <div class="about-col">
         <span class="about-num">CSIR–IGIB</span>
-        <span class="about-label">Research home</span>
+        <span class="about-label">Dissertation</span>
       </div>
     </div>
 
@@ -62,62 +61,70 @@
       <h2>Selected Projects</h2>
     </div>
 
-    <div class="projects-grid">
+    <div class="slider-wrap">
+      <div class="slider-track" id="sliderTrack">
 
-      <div class="project-card featured">
-        <div class="project-badge">Featured</div>
-        <div class="project-number">01</div>
-        <h3>CVD Risk Factor NER Pipeline</h3>
-        <p>End-to-end biomedical NLP system for extracting cardiovascular risk factors from PubMed abstracts. Silver-standard BIO-tagged corpus via Aho-Corasick over a 22,000+ entity library from SemMedDB, CTD, and UMLS — with systematic comparison across BioBERT, PubMedBERT, and UMLS-BERT.</p>
-        <div class="project-tags">
-          <span class="tag">BioBERT</span>
-          <span class="tag">NER</span>
-          <span class="tag">SemMedDB</span>
-          <span class="tag">UMLS</span>
+        <div class="slide">
+          <div class="slide-inner">
+            <div class="project-badge">Featured</div>
+            <div class="project-number">01 / 04</div>
+            <h3>CVD Risk Factor NER Pipeline</h3>
+            <p>End-to-end biomedical NLP system for extracting cardiovascular risk factors from PubMed abstracts. Silver-standard BIO-tagged corpus via Aho-Corasick over a 22,000+ entity library from SemMedDB, CTD, and UMLS — with systematic comparison across BioBERT, PubMedBERT, and UMLS-BERT.</p>
+            <div class="project-tags">
+              <span class="tag">BioBERT</span><span class="tag">NER</span><span class="tag">SemMedDB</span><span class="tag">UMLS</span>
+            </div>
+            <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
+          </div>
         </div>
-        <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
+
+        <div class="slide">
+          <div class="slide-inner">
+            <div class="project-number">02 / 04</div>
+            <h3>AMR Knowledge Graph</h3>
+            <p>Transformer-based NER across a domain-specific AMR corpus — extracting genes, chemicals, diseases, and organisms — then wired into a structured biomedical knowledge graph from the extracted relations.</p>
+            <div class="project-tags">
+              <span class="tag">NER</span><span class="tag">Knowledge Graph</span><span class="tag">Python</span>
+            </div>
+            <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-inner">
+            <div class="project-number">03 / 04</div>
+            <h3>Prostate Cancer Biomarker Explorer</h3>
+            <p>GEO transcriptomics processed via R, integrated with PubMed literature into a Neo4j knowledge graph. Streamlit interface for gene-specific biomarker reports — no code required for domain researchers.</p>
+            <div class="project-tags">
+              <span class="tag">Neo4j</span><span class="tag">Streamlit</span><span class="tag">R</span>
+            </div>
+            <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-inner">
+            <div class="project-number">04 / 04</div>
+            <h3>Alzheimer's Classification (CNN)</h3>
+            <p>Six-stage Alzheimer's classification on ADNI using CNN with dilated convolutions for spatial feature extraction. Submitted to IEEE ICCCNT and presented as a poster at the institute level.</p>
+            <div class="project-tags">
+              <span class="tag">CNN</span><span class="tag">Transfer Learning</span><span class="tag">PyTorch</span>
+            </div>
+            <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
       </div>
 
-      <div class="project-card">
-        <div class="project-number">02</div>
-        <h3>AMR Knowledge Graph</h3>
-        <p>Transformer-based NER across a domain-specific AMR corpus — extracting genes, chemicals, diseases, and organisms — then wired into a structured biomedical knowledge graph from the extracted relations.</p>
-        <div class="project-tags">
-          <span class="tag">NER</span>
-          <span class="tag">Knowledge Graph</span>
-          <span class="tag">Python</span>
-        </div>
-        <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
+      <div class="slider-controls">
+        <button class="slider-btn" id="sliderPrev">←</button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="sliderNext">→</button>
       </div>
-
-      <div class="project-card">
-        <div class="project-number">03</div>
-        <h3>Prostate Cancer Biomarker Explorer</h3>
-        <p>GEO transcriptomics processed via R, integrated with PubMed literature into a Neo4j knowledge graph. Streamlit interface for gene-specific biomarker reports — no code required for domain researchers.</p>
-        <div class="project-tags">
-          <span class="tag">Neo4j</span>
-          <span class="tag">Streamlit</span>
-          <span class="tag">R</span>
-        </div>
-        <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-number">04</div>
-        <h3>Alzheimer's Classification (CNN)</h3>
-        <p>Six-stage Alzheimer's classification on ADNI using CNN with dilated convolutions for spatial feature extraction. Submitted to IEEE ICCCNT and presented as a poster at the institute level.</p>
-        <div class="project-tags">
-          <span class="tag">CNN</span>
-          <span class="tag">Transfer Learning</span>
-          <span class="tag">PyTorch</span>
-        </div>
-        <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
-      </div>
-
     </div>
+
   </section>
 
-  <!-- ─── TAB 2: RESUME ────────────────────────────────────── -->
+  <!-- ─── RESUME ────────────────────────────────────────────── -->
   <section class="tab-section" id="tab-resume">
 
     <div class="resume-header">
@@ -160,9 +167,9 @@
               <span class="resume-date">Jan 2025 – Present</span>
             </div>
             <ul class="resume-bullets">
-              <li>Scaled NLP pipeline to ~584,000 PubMed abstracts (1995–2025); built silver-standard BIO-tagged NER corpus using Aho-Corasick over 22,000+ entities from SemMedDB, CTD, and UMLS with evidence-strength tiering</li>
-              <li>Fine-tuned BioBERT, PubMedBERT, and UMLS-BERT for CVD risk factor NER with systematic cross-entity comparison</li>
-              <li>Parallel AMR project: curated corpus, four-entity transformer NER, structured knowledge graph from extracted relations</li>
+              <li>Scaled NLP pipeline to ~584,000 PubMed abstracts; silver-standard BIO-tagged NER corpus via Aho-Corasick over 22,000+ entities from SemMedDB, CTD, and UMLS</li>
+              <li>Fine-tuned BioBERT, PubMedBERT, and UMLS-BERT for CVD risk factor NER</li>
+              <li>Parallel AMR project: transformer NER across four entity types, structured knowledge graph</li>
             </ul>
           </div>
 
@@ -173,7 +180,7 @@
             </div>
             <ul class="resume-bullets">
               <li>Built initial CVD risk factor NER pipeline with fine-tuned BioBERT across five entity categories</li>
-              <li>t-SNE visualisations of UMLS concept embeddings across SapBERT, BioBERT, PubMedBERT using incremental PCA; named author on manuscript in preparation</li>
+              <li>t-SNE visualisations of UMLS concept embeddings via incremental PCA; named author on manuscript in preparation</li>
             </ul>
           </div>
 
@@ -183,8 +190,8 @@
               <span class="resume-date">Jan 2024 – Apr 2024</span>
             </div>
             <ul class="resume-bullets">
-              <li>Processed prostate cancer transcriptomics from GEO with R-based pipelines; integrated PubMed literature into a Neo4j knowledge graph for structured biomarker querying</li>
-              <li>Built a Streamlit interface for on-demand gene-specific biomarker reports accessible without code</li>
+              <li>Processed prostate cancer transcriptomics from GEO; integrated PubMed literature into a Neo4j knowledge graph</li>
+              <li>Streamlit interface for on-demand gene-specific biomarker reports</li>
             </ul>
           </div>
 
@@ -194,7 +201,7 @@
               <span class="resume-date">May 2023 – Jul 2023</span>
             </div>
             <ul class="resume-bullets">
-              <li>CNN + transfer learning for six-stage Alzheimer's classification on ADNI with dilated convolutions; 91% accuracy</li>
+              <li>CNN + transfer learning for six-stage Alzheimer's classification on ADNI; 91% accuracy</li>
               <li>Submitted to IEEE ICCCNT; presented as a poster at the institute level</li>
             </ul>
           </div>
@@ -208,35 +215,19 @@
           <div class="skill-group">
             <span class="skill-group-label">NLP / ML</span>
             <div class="skill-tags">
-              <span class="tag">BioBERT</span>
-              <span class="tag">PubMedBERT</span>
-              <span class="tag">BERT+CRF</span>
-              <span class="tag">SciSpaCy</span>
-              <span class="tag">Transformers</span>
-              <span class="tag">UMLS</span>
+              <span class="tag">BioBERT</span><span class="tag">PubMedBERT</span><span class="tag">BERT+CRF</span><span class="tag">SciSpaCy</span><span class="tag">Transformers</span><span class="tag">UMLS</span>
             </div>
           </div>
           <div class="skill-group">
             <span class="skill-group-label">Languages & Tools</span>
             <div class="skill-tags">
-              <span class="tag">Python</span>
-              <span class="tag">R</span>
-              <span class="tag">PyTorch</span>
-              <span class="tag">TensorFlow</span>
-              <span class="tag">Neo4j</span>
-              <span class="tag">Streamlit</span>
-              <span class="tag">Git</span>
-              <span class="tag">Slurm/HPC</span>
+              <span class="tag">Python</span><span class="tag">R</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Neo4j</span><span class="tag">Streamlit</span><span class="tag">Git</span><span class="tag">Slurm/HPC</span>
             </div>
           </div>
           <div class="skill-group">
             <span class="skill-group-label">Biomedical Resources</span>
             <div class="skill-tags">
-              <span class="tag">SemMedDB</span>
-              <span class="tag">CTD</span>
-              <span class="tag">MeSH</span>
-              <span class="tag">PubMed APIs</span>
-              <span class="tag">GEO</span>
+              <span class="tag">SemMedDB</span><span class="tag">CTD</span><span class="tag">MeSH</span><span class="tag">PubMed APIs</span><span class="tag">GEO</span>
             </div>
           </div>
         </div>
@@ -245,7 +236,7 @@
     </div>
   </section>
 
-  <!-- ─── TAB 3: UPDATES ───────────────────────────────────── -->
+  <!-- ─── UPDATES ───────────────────────────────────────────── -->
   <section class="tab-section" id="tab-updates">
 
     <div class="updates-hero">
@@ -268,45 +259,37 @@
     <div class="timeline">
 
       <div class="timeline-item">
-        <div class="timeline-date">April 2026</div>
+        <div class="timeline-date">Jan 2025 – Present</div>
         <div class="timeline-content">
-          <h3>BioClinicalBERT recall drop investigation</h3>
-          <p>Undersampling improved precision but recall dropped. Evaluating class weight tuning as a middle ground.</p>
-          <span class="tl-tag">In Progress</span>
+          <h3>Dissertation Researcher · CSIR–IGIB</h3>
         </div>
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-date">April 2026</div>
+        <div class="timeline-date">May – Jul 2024</div>
         <div class="timeline-content">
-          <h3>Phase 2 validation pipeline design</h3>
-          <p>Three-script architecture to cross-validate extracted risk factors against SemMedDB predications and the BioCause corpus.</p>
-          <span class="tl-tag">In Progress</span>
+          <h3>Summer Research Intern · CSIR–IGIB</h3>
         </div>
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-date">March 2026</div>
+        <div class="timeline-date">Jan – Apr 2024</div>
         <div class="timeline-content">
-          <h3>UMLS entity linking via SciSpaCy</h3>
-          <p>Extracted biomedical terms now map to UMLS concept IDs. Coverage at 74% — domain adaptation ongoing.</p>
-          <span class="tl-tag done">Done</span>
+          <h3>Project Intern · Systems Biology Lab, Amity University</h3>
         </div>
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-date">Jan 2026</div>
+        <div class="timeline-date">May – Jul 2023</div>
         <div class="timeline-content">
-          <h3>Corpus scaled to 584k abstracts</h3>
-          <p>Full pipeline across ~584,000 PubMed abstracts (1995–2025). Aho-Corasick over 22,000+ entities with evidence-strength tiering.</p>
-          <span class="tl-tag done">Done</span>
+          <h3>Summer Research Intern · Amity Centre for AI</h3>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ─── TAB 4: ART ────────────────────────────────────────── -->
+  <!-- ─── ART ───────────────────────────────────────────────── -->
   <section class="tab-section" id="tab-art">
 
     <div class="art-hero">
@@ -381,55 +364,8 @@
       </div>
     </div>
 
-    <div class="art-section">
-      <div class="section-header">
-        <span class="section-tag">Visual</span>
-        <h2>Things That Caught My Eye</h2>
-      </div>
-      <div class="image-grid">
-        <div class="image-placeholder">
-          <p>Add an image here</p>
-          <p class="image-hint">Put your file in the same folder and write:<br><code>&lt;img src="photo.jpg"&gt;</code></p>
-        </div>
-        <div class="image-placeholder">
-          <p>Another image</p>
-          <p class="image-hint">Keep under 1MB for fast loading</p>
-        </div>
-        <div class="image-placeholder">
-          <p>And another</p>
-          <p class="image-hint">Square crops work best</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="art-section">
-      <div class="section-header">
-        <span class="section-tag">Miscellaneous</span>
-        <h2>Currently Into</h2>
-      </div>
-      <div class="things-grid">
-        <div class="thing-card">
-          <p class="thing-label">Reading</p>
-          <p class="thing-val">Add a book</p>
-        </div>
-        <div class="thing-card">
-          <p class="thing-label">Watching</p>
-          <p class="thing-val">A film or show</p>
-        </div>
-        <div class="thing-card">
-          <p class="thing-label">Thinking about</p>
-          <p class="thing-val">Something on your mind</p>
-        </div>
-        <div class="thing-card">
-          <p class="thing-label">Goal</p>
-          <p class="thing-val">What you're working toward</p>
-        </div>
-      </div>
-    </div>
-
   </section>
 
-  <!-- ─── FOOTER ───────────────────────────────────────────── -->
   <footer>
     <p>Manan Vangani · <a href="mailto:vanganimanan84@gmail.com">vanganimanan84@gmail.com</a></p>
   </footer>
