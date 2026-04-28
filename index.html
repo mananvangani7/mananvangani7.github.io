@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manan Vangani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── NAV ──────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-logo">M.</div>
+    <div class="nav-links">
+      <button class="nav-btn active" data-tab="portfolio">Portfolio</button>
+      <button class="nav-btn" data-tab="resume">Resume</button>
+      <button class="nav-btn" data-tab="updates">Updates</button>
+      <button class="nav-btn" data-tab="art">Art</button>
+    </div>
+    <div class="nav-menu" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- ─── TAB 1: PORTFOLIO ─────────────────────────────────── -->
+  <section class="tab-section active" id="tab-portfolio">
+
+    <div class="hero">
+      <div class="hero-tag">Biomedical NLP · Researcher</div>
+      <h1 class="hero-title">
+        I like building stuff.<br>
+        <em>Mostly things that read.</em>
+      </h1>
+      <p class="hero-sub">
+        Biomedical NLP, clinical risk extraction, knowledge graphs — making sense of medical literature at scale.
+      </p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="https://github.com/mananvangani7" target="_blank">GitHub →</a>
+        <a class="btn-ghost" data-tab="resume">View Resume</a>
+      </div>
+    </div>
+
+    <div class="about-strip">
+      <div class="about-col">
+        <span class="about-num">BioBERT</span>
+        <span class="about-label">Core model</span>
+      </div>
+      <div class="about-divider"></div>
+      <div class="about-col">
+        <span class="about-num">PubMed</span>
+        <span class="about-label">Primary corpus</span>
+      </div>
+      <div class="about-divider"></div>
+      <div class="about-col">
+        <span class="about-num">CSIR–IGIB</span>
+        <span class="about-label">Research home</span>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <span class="section-tag">Work</span>
+      <h2>Selected Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="project-badge">Featured</div>
+        <div class="project-number">01</div>
+        <h3>CVD Risk Factor NER Pipeline</h3>
+        <p>End-to-end biomedical NLP system for extracting cardiovascular risk factors from PubMed abstracts. Silver-standard BIO-tagged corpus via Aho-Corasick over a 22,000+ entity library from SemMedDB, CTD, and UMLS — with systematic comparison across BioBERT, PubMedBERT, and UMLS-BERT.</p>
+        <div class="project-tags">
+          <span class="tag">BioBERT</span>
+          <span class="tag">NER</span>
+          <span class="tag">SemMedDB</span>
+          <span class="tag">UMLS</span>
+        </div>
+        <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">02</div>
+        <h3>AMR Knowledge Graph</h3>
+        <p>Transformer-based NER across a domain-specific AMR corpus — extracting genes, chemicals, diseases, and organisms — then wired into a structured biomedical knowledge graph from the extracted relations.</p>
+        <div class="project-tags">
+          <span class="tag">NER</span>
+          <span class="tag">Knowledge Graph</span>
+          <span class="tag">Python</span>
+        </div>
+        <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">03</div>
+        <h3>Prostate Cancer Biomarker Explorer</h3>
+        <p>GEO transcriptomics processed via R, integrated with PubMed literature into a Neo4j knowledge graph. Streamlit interface for gene-specific biomarker reports — no code required for domain researchers.</p>
+        <div class="project-tags">
+          <span class="tag">Neo4j</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">R</span>
+        </div>
+        <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">04</div>
+        <h3>Alzheimer's Classification (CNN)</h3>
+        <p>Six-stage Alzheimer's classification on ADNI using CNN with dilated convolutions for spatial feature extraction. Submitted to IEEE ICCCNT and presented as a poster at the institute level.</p>
+        <div class="project-tags">
+          <span class="tag">CNN</span>
+          <span class="tag">Transfer Learning</span>
+          <span class="tag">PyTorch</span>
+        </div>
+        <a class="project-link" href="https://github.com/mananvangani7" target="_blank">View on GitHub →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── TAB 2: RESUME ────────────────────────────────────── -->
+  <section class="tab-section" id="tab-resume">
+
+    <div class="resume-header">
+      <div>
+        <h1 class="resume-name">Manan Vangani</h1>
+        <p class="resume-title">ML Researcher · Biomedical NLP</p>
+        <div class="resume-contact">
+          <span>vanganimanan84@gmail.com</span>
+          <span class="sep">·</span>
+          <a href="https://linkedin.com/in/manan-vangani-924271227" target="_blank">LinkedIn</a>
+          <span class="sep">·</span>
+          <a href="https://github.com/mananvangani7" target="_blank">github.com/mananvangani7</a>
+        </div>
+      </div>
+      <a class="btn-primary" href="resume.pdf" download>Download PDF ↓</a>
+    </div>
+
+    <div class="resume-body">
+
+      <div class="resume-section">
+        <div class="resume-section-label">Education</div>
+        <div class="resume-items">
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <strong>B.Tech + M.Tech (Integrated), Biotechnology · Amity University</strong>
+              <span class="resume-date">Expected May 2026</span>
+            </div>
+            <p>CGPA: 8.43 · Noida, India</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <div class="resume-section-label">Research</div>
+        <div class="resume-items">
+
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <strong>Dissertation Researcher · CSIR–IGIB</strong>
+              <span class="resume-date">Jan 2025 – Present</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Scaled NLP pipeline to ~584,000 PubMed abstracts (1995–2025); built silver-standard BIO-tagged NER corpus using Aho-Corasick over 22,000+ entities from SemMedDB, CTD, and UMLS with evidence-strength tiering</li>
+              <li>Fine-tuned BioBERT, PubMedBERT, and UMLS-BERT for CVD risk factor NER with systematic cross-entity comparison</li>
+              <li>Parallel AMR project: curated corpus, four-entity transformer NER, structured knowledge graph from extracted relations</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <strong>Summer Research Intern · CSIR–IGIB</strong>
+              <span class="resume-date">May 2024 – Jul 2024</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Built initial CVD risk factor NER pipeline with fine-tuned BioBERT across five entity categories</li>
+              <li>t-SNE visualisations of UMLS concept embeddings across SapBERT, BioBERT, PubMedBERT using incremental PCA; named author on manuscript in preparation</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <strong>Project Intern · Systems Biology Lab, Amity University</strong>
+              <span class="resume-date">Jan 2024 – Apr 2024</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Processed prostate cancer transcriptomics from GEO with R-based pipelines; integrated PubMed literature into a Neo4j knowledge graph for structured biomarker querying</li>
+              <li>Built a Streamlit interface for on-demand gene-specific biomarker reports accessible without code</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <strong>Summer Research Intern · Amity Centre for AI</strong>
+              <span class="resume-date">May 2023 – Jul 2023</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>CNN + transfer learning for six-stage Alzheimer's classification on ADNI with dilated convolutions; 91% accuracy</li>
+              <li>Submitted to IEEE ICCCNT; presented as a poster at the institute level</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <div class="resume-section-label">Skills</div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <span class="skill-group-label">NLP / ML</span>
+            <div class="skill-tags">
+              <span class="tag">BioBERT</span>
+              <span class="tag">PubMedBERT</span>
+              <span class="tag">BERT+CRF</span>
+              <span class="tag">SciSpaCy</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">UMLS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-group-label">Languages & Tools</span>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">R</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Neo4j</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Git</span>
+              <span class="tag">Slurm/HPC</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-group-label">Biomedical Resources</span>
+            <div class="skill-tags">
+              <span class="tag">SemMedDB</span>
+              <span class="tag">CTD</span>
+              <span class="tag">MeSH</span>
+              <span class="tag">PubMed APIs</span>
+              <span class="tag">GEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── TAB 3: UPDATES ───────────────────────────────────── -->
+  <section class="tab-section" id="tab-updates">
+
+    <div class="updates-hero">
+      <div class="hero-tag">Career Log</div>
+      <h1>Updates</h1>
+      <p>What I'm working on and where things stand.</p>
+    </div>
+
+    <div class="now-strip">
+      <div class="now-item">
+        <span class="now-dot green"></span>
+        <span>Building the AMR knowledge graph — relation extraction and graph construction</span>
+      </div>
+      <div class="now-item">
+        <span class="now-dot green"></span>
+        <span>RAG pipeline using LangChain over biomedical literature</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">April 2026</div>
+        <div class="timeline-content">
+          <h3>BioClinicalBERT recall drop investigation</h3>
+          <p>Undersampling improved precision but recall dropped. Evaluating class weight tuning as a middle ground.</p>
+          <span class="tl-tag">In Progress</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">April 2026</div>
+        <div class="timeline-content">
+          <h3>Phase 2 validation pipeline design</h3>
+          <p>Three-script architecture to cross-validate extracted risk factors against SemMedDB predications and the BioCause corpus.</p>
+          <span class="tl-tag">In Progress</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">March 2026</div>
+        <div class="timeline-content">
+          <h3>UMLS entity linking via SciSpaCy</h3>
+          <p>Extracted biomedical terms now map to UMLS concept IDs. Coverage at 74% — domain adaptation ongoing.</p>
+          <span class="tl-tag done">Done</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Jan 2026</div>
+        <div class="timeline-content">
+          <h3>Corpus scaled to 584k abstracts</h3>
+          <p>Full pipeline across ~584,000 PubMed abstracts (1995–2025). Aho-Corasick over 22,000+ entities with evidence-strength tiering.</p>
+          <span class="tl-tag done">Done</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── TAB 4: ART ────────────────────────────────────────── -->
+  <section class="tab-section" id="tab-art">
+
+    <div class="art-hero">
+      <div class="hero-tag">Beyond the terminal</div>
+      <h1>Art</h1>
+      <p>Things that fill the hours when the model is training.</p>
+    </div>
+
+    <div class="poem-block">
+      <div class="poem-eyebrow">The only poem I will ever need</div>
+      <h2 class="poem-title">If —</h2>
+      <p class="poem-author">Rudyard Kipling, 1910</p>
+      <blockquote class="poem-excerpt">
+        If you can keep your head when all about you<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Are losing theirs and blaming it on you,<br>
+        If you can trust yourself when all men doubt you,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;But make allowance for their doubting too;<br>
+        If you can wait and not be tired by waiting,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Or being lied about, don't deal in lies,<br>
+        Or being hated, don't give way to hating,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;And yet don't look too good, nor talk too wise:<br>
+        <br>
+        If you can dream—and not make dreams your master;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;If you can think—and not make thoughts your aim;<br>
+        If you can meet with Triumph and Disaster<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;And treat those two impostors just the same;<br>
+        If you can bear to hear the truth you've spoken<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Twisted by knaves to make a trap for fools,<br>
+        Or watch the things you gave your life to, broken,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;And stoop and build 'em up with worn-out tools:<br>
+        <br>
+        If you can make one heap of all your winnings<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;And risk it on one turn of pitch-and-toss,<br>
+        And lose, and start again at your beginnings<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;And never breathe a word about your loss;<br>
+        If you can force your heart and nerve and sinew<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;To serve your turn long after they are gone,<br>
+        And so hold on when there is nothing in you<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Except the Will which says to them: 'Hold on!'<br>
+        <br>
+        If you can talk with crowds and keep your virtue,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Or walk with Kings—nor lose the common touch,<br>
+        If neither foes nor loving friends can hurt you,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;If all men count with you, but none too much;<br>
+        If you can fill the unforgiving minute<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;With sixty seconds' worth of distance run,<br>
+        Yours is the Earth and everything that's in it,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;And—which is more—you'll be a Man, my son!
+      </blockquote>
+    </div>
+
+    <div class="art-section">
+      <div class="section-header">
+        <span class="section-tag">Sound</span>
+        <h2>Music I Return To</h2>
+      </div>
+      <div class="music-grid">
+        <div class="music-card">
+          <div class="music-icon">♪</div>
+          <div>
+            <p class="music-name">Sunshine Kiss the Water</p>
+            <p class="music-genre">Club Kuru · Warm · Timeless</p>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-icon">♪</div>
+          <div>
+            <p class="music-name">Love Is Noise</p>
+            <p class="music-genre">The Verve · Anthemic · Expansive</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="art-section">
+      <div class="section-header">
+        <span class="section-tag">Visual</span>
+        <h2>Things That Caught My Eye</h2>
+      </div>
+      <div class="image-grid">
+        <div class="image-placeholder">
+          <p>Add an image here</p>
+          <p class="image-hint">Put your file in the same folder and write:<br><code>&lt;img src="photo.jpg"&gt;</code></p>
+        </div>
+        <div class="image-placeholder">
+          <p>Another image</p>
+          <p class="image-hint">Keep under 1MB for fast loading</p>
+        </div>
+        <div class="image-placeholder">
+          <p>And another</p>
+          <p class="image-hint">Square crops work best</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="art-section">
+      <div class="section-header">
+        <span class="section-tag">Miscellaneous</span>
+        <h2>Currently Into</h2>
+      </div>
+      <div class="things-grid">
+        <div class="thing-card">
+          <p class="thing-label">Reading</p>
+          <p class="thing-val">Add a book</p>
+        </div>
+        <div class="thing-card">
+          <p class="thing-label">Watching</p>
+          <p class="thing-val">A film or show</p>
+        </div>
+        <div class="thing-card">
+          <p class="thing-label">Thinking about</p>
+          <p class="thing-val">Something on your mind</p>
+        </div>
+        <div class="thing-card">
+          <p class="thing-label">Goal</p>
+          <p class="thing-val">What you're working toward</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────────────── -->
+  <footer>
+    <p>Manan Vangani · <a href="mailto:vanganimanan84@gmail.com">vanganimanan84@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
