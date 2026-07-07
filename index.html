@@ -16,6 +16,7 @@
     <div class="nav-links">
       <button class="nav-btn active" data-tab="portfolio">PORTFOLIO</button>
       <button class="nav-btn" data-tab="resume">RESUME</button>
+      <button class="nav-btn" data-tab="research">RESEARCH</button>
       <button class="nav-btn" data-tab="updates">UPDATES</button>
       <button class="nav-btn" data-tab="art">ART</button>
     </div>
@@ -76,7 +77,7 @@
             <div class="project-badge">★ FEATURED</div>
             <div class="project-number">01 / 04</div>
             <h3>CVD RISK FACTOR NER PIPELINE</h3>
-            <p>End-to-end biomedical NLP system for extracting cardiovascular risk factors from PubMed abstracts. Silver-standard BIO-tagged corpus via Aho-Corasick over a 22,000+ entity library from SemMedDB, CTD, and UMLS — with systematic comparison across BioBERT, PubMedBERT, and UMLS-BERT.</p>
+            <p>Context-aware NLP pipeline for mining cardiovascular disease risk factors from ~584,000 PubMed abstracts. Phase 1: silver-standard BIO-tagged corpus via Aho-Corasick over a 22,000+ entity library from SemMedDB, CTD, and UMLS. Phase 2: BioBERT, PubMedBERT, and UMLS-BERT applied for NER with systematic comparison across entity categories, outputs structured into a CVD knowledge graph.</p>
             <div class="project-tags">
               <span class="tag">BIOBERT</span><span class="tag">NER</span><span class="tag">SEMMEDDB</span><span class="tag">UMLS</span>
             </div>
@@ -175,9 +176,9 @@
               <span class="resume-date">JAN 2025 – JUN 2026</span>
             </div>
             <ul class="resume-bullets">
-              <li>Scaled NLP pipeline to ~584,000 PubMed abstracts; silver-standard BIO-tagged NER corpus via Aho-Corasick over 22,000+ entities from SemMedDB, CTD, and UMLS</li>
-              <li>Fine-tuned BioBERT, PubMedBERT, and UMLS-BERT for CVD risk factor NER</li>
-              <li>Parallel AMR project: transformer NER across four entity types, structured knowledge graph</li>
+              <li>Phase 1 — silver-standard BIO-tagged corpus via Aho-Corasick over 22,000+ entity candidates from SemMedDB, CTD, and UMLS across ~584,000 PubMed abstracts (1995–2025)</li>
+              <li>Phase 2 — BioBERT, PubMedBERT, and UMLS-BERT applied for NER with systematic cross-entity comparison; outputs structured into a CVD risk factor knowledge graph</li>
+              <li>Parallel AMR project: transformer NER across four entity types, structured knowledge graph from extracted relations</li>
             </ul>
           </div>
 
@@ -187,7 +188,7 @@
               <span class="resume-date">MAY – JUL 2024</span>
             </div>
             <ul class="resume-bullets">
-              <li>Built initial CVD risk factor NER pipeline with fine-tuned BioBERT across five entity categories</li>
+              <li>Built prototype CVD risk factor NER pipeline applying BioBERT across five entity categories on PubMed abstracts</li>
               <li>t-SNE visualisations of UMLS concept embeddings via incremental PCA; named author on manuscript in preparation</li>
             </ul>
           </div>
@@ -312,6 +313,62 @@
     </div>
   </section>
 
+  <!-- ─── RESEARCH ─────────────────────────────────────────── -->
+  <section class="tab-section" id="tab-research">
+
+    <div class="updates-hero">
+      <div class="hero-tag">&gt; MASTER'S DISSERTATION</div>
+      <h1>RESEARCH</h1>
+      <p>Master's thesis submitted to CSIR–IGIB and Amity University, June 2026.</p>
+    </div>
+
+    <div class="dissertation-block">
+      <div class="poem-eyebrow">// DISSERTATION · CSIR-IGIB · JAN 2025 – JUN 2026</div>
+      <h2 class="dissertation-title">CONTEXT-AWARE NER PIPELINE FOR CARDIOVASCULAR DISEASE RISK FACTOR MINING FROM BIOMEDICAL LITERATURE</h2>
+      <p class="dissertation-meta">SUPERVISOR: DR. KUMARDEEP CHAUDHARY &nbsp;·&nbsp; CSIR–IGIB, NEW DELHI</p>
+      <div class="dissertation-body">
+        <p>END-TO-END NLP PIPELINE FOR MINING CARDIOVASCULAR DISEASE RISK FACTORS FROM ~584,000 PUBMED ABSTRACTS (1995–2025).</p>
+        <p>PHASE 1 — CORPUS CONSTRUCTION: CANDIDATE ENTITIES DERIVED FROM SEMMEDDB, CTD, AND UMLS (22,000+ ENTITY LIBRARY). AHO-CORASICK MATCHING APPLIED TO ABSTRACTS TO PRODUCE A SILVER-STANDARD BIO-TAGGED CORPUS WITH EVIDENCE-STRENGTH TIERING ACROSS FIVE CATEGORIES: DISEASE, DRUG, GENE/PROTEIN, LIFESTYLE FACTOR, AND BIOMARKER.</p>
+        <p>PHASE 2 — NER EXTRACTION: BIOBERT, PUBMEDBERT, AND UMLS-BERT APPLIED TO THE SILVER-STANDARD CORPUS FOR NAMED ENTITY RECOGNITION. MODELS COMPARED SYSTEMATICALLY ACROSS ENTITY CATEGORIES. OUTPUTS USED TO CONSTRUCT A STRUCTURED CVD RISK FACTOR KNOWLEDGE GRAPH FROM EXTRACTED ENTITY–RELATION PAIRS.</p>
+      </div>
+      <div class="dissertation-tags">
+        <span class="tag">BIOBERT</span><span class="tag">PUBMEDBERT</span><span class="tag">UMLS-BERT</span><span class="tag">NER</span><span class="tag">SEMMEDDB</span><span class="tag">AHO-CORASICK</span><span class="tag">PYTHON</span><span class="tag">HPC/SLURM</span>
+      </div>
+      <a class="project-link" href="https://github.com/mananvangani7/BERT_biomedical_cvd" target="_blank">&gt; VIEW REPO</a>
+    </div>
+
+    <div class="section-header" style="margin-top:2rem;">
+      <span class="section-tag">// PARALLEL WORK</span>
+      <h2>OTHER RESEARCH</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">2024 – 2025</div>
+        <div class="timeline-content">
+          <h3>AMR KNOWLEDGE GRAPH · CSIR-IGIB</h3>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">JAN – APR 2024</div>
+        <div class="timeline-content">
+          <h3>PROSTATE CANCER BIOMARKER EXPLORER · AMITY SYSTEMS BIOLOGY LAB</h3>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">MAY – JUL 2023</div>
+        <div class="timeline-content">
+          <h3>ALZHEIMER'S CNN CLASSIFICATION · AMITY CENTRE FOR AI</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
   <!-- ─── ART ───────────────────────────────────────────────── -->
   <section class="tab-section" id="tab-art">
 
@@ -319,19 +376,6 @@
       <div class="hero-tag">&gt; BEYOND THE TERMINAL</div>
       <h1>ART</h1>
       <p>Things that fill the hours when the model is training.</p>
-    </div>
-
-    <div class="dissertation-block">
-      <div class="poem-eyebrow">// MASTER'S DISSERTATION · CSIR-IGIB · 2025-2026</div>
-      <h2 class="dissertation-title">CONTEXT-AWARE NER PIPELINE FOR CARDIOVASCULAR DISEASE RISK FACTOR MINING</h2>
-      <p class="dissertation-meta">SUPERVISOR: DR. KUMARDEEP CHAUDHARY &nbsp;·&nbsp; CSIR–IGIB, NEW DELHI</p>
-      <div class="dissertation-body">
-        <p>End-to-end NLP pipeline for mining cardiovascular disease risk factors from ~584,000 PubMed abstracts (1995–2025). Built a silver-standard BIO-tagged corpus using Aho-Corasick over a 22,000+ entity library derived from SemMedDB, CTD, and UMLS with evidence-strength tiering. Fine-tuned and systematically compared BioBERT, PubMedBERT, and UMLS-BERT across five entity categories: Disease, Drug, Gene/Protein, Lifestyle Factor, and Biomarker.</p>
-      </div>
-      <div class="dissertation-tags">
-        <span class="tag">BIOBERT</span><span class="tag">PUBMEDBERT</span><span class="tag">UMLS-BERT</span><span class="tag">NER</span><span class="tag">SEMMEDDB</span><span class="tag">AHO-CORASICK</span><span class="tag">PYTHON</span><span class="tag">HPC/SLURM</span>
-      </div>
-      <a class="project-link" href="https://github.com/mananvangani7/BERT_biomedical_cvd" target="_blank">&gt; VIEW REPO</a>
     </div>
 
     <div class="poem-block">
