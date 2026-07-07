@@ -212,6 +212,62 @@ a:hover { color: var(--gold2); }
 }
 .about-divider { width: 4px; background: var(--faint); flex-shrink: 0; }
 
+/* ─── ABOUT LINK ────────────────────────────────────────── */
+.about-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+  width: 100%;
+}
+.about-link:hover .about-num { color: var(--gold2); }
+.about-link:hover { opacity: 1; }
+
+/* ─── DISSERTATION BLOCK ─────────────────────────────────── */
+.dissertation-block {
+  background: #0f0e07;
+  border: 4px solid var(--gold);
+  box-shadow: 6px 6px 0 var(--gold-dark);
+  padding: 28px 32px;
+  margin-bottom: 24px;
+}
+
+.dissertation-title {
+  font-family: var(--font);
+  font-size: 11px;
+  color: var(--gold2);
+  text-shadow: 2px 2px 0 var(--gold-dark);
+  margin-bottom: 10px;
+  line-height: 1.9;
+  letter-spacing: 0.5px;
+}
+
+.dissertation-meta {
+  font-family: var(--font);
+  font-size: 7px;
+  color: var(--dim);
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  line-height: 2;
+}
+
+.dissertation-body p {
+  font-family: var(--font);
+  font-size: 8px;
+  color: var(--muted);
+  line-height: 2.4;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+}
+
+.dissertation-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
 /* ─── SECTION HEADER ────────────────────────────────────── */
 .section-header { margin-bottom: 18px; }
 .section-tag {
